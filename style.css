@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.image-texts .img{
+    display: none;
+}
+
+main{
+    display: grid;
+    font-family: "Josefin Sans" ,sans-serif;
+    grid-template-columns: 60% 40%;
+    /* height: 100vh; */
+    width: 100%;
+   
+}
+/* .container{
+    background-image: url(./base-apparel-coming-soon-master/images/bg-pattern-desktop.svg);
+   background-size: cover;
+   background-repeat: no-repeat;
+} */
+.inner-container{
+    padding: 4rem 9rem;
+}
+.texts{
+    margin-block:4rem ;
+}
+.texts h1{
+ color: hsl(0, 6%, 24%);  
+ font-family:'Josefin Sans',sans-serif;
+ letter-spacing: 0.7rem; 
+ font-size: 3rem;
+
+}
+.texts h1 span{
+    color: hsl(0, 36%, 70%);
+    font-size: 3rem;
+    font-family: "Josefin Sans" ,sans-serif;
+    font-weight: lighter;
+ letter-spacing: 0.7rem; 
+}
+.texts p{
+    color: hsl(0, 36%, 70%);
+    margin-block: 2rem;
+}
+
+.input-container{
+    width: 80%;
+    height: 40px;
+    position: relative;
+}
+
+input{
+    padding-left: 1rem;
+   width: 100%;
+    height:100%;
+    border: 1.5px solid hsl(0deg 6% 24% / 46%);
+    outline: none;
+    border-radius: 55px;
+}
+.button{
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    cursor: pointer;
+    
+    width: 80px;
+    border-radius: 50px;
+    background-image: linear-gradient(135deg,  hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    right: 0;
+    top: 0;
+}
+.arrow-icon{
+    margin: 0;
+    transform: translate(33px, 9px);
+    inset: auto;
+}
+.button:active{
+    background-image: linear-gradient(135deg, hsl(0deg 74.53% 92.34%), hsl(0deg 50.94% 82.95%));
+    box-shadow: 0rem 0.5rem 1rem 0.3rem hsl(0, 74%, 90%);
+}
+.image{
+   background-image: url(./base-apparel-coming-soon-master/images/hero-desktop.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.error{
+    color: hsl(0, 93%, 68%);
+    font-size: small;
+    margin-left: 1rem;
+    display: none;
+}
+.error-icon{
+    right: 85px;
+    position: absolute;
+    top: 8px;
+    display: none;
+}
+.errors .error-icon{
+    display: block;
+}
+.errors .error{
+    display: block;
+}
+.errors input{
+    border: 1.5px solid hsl(0, 93%, 68%);
+}
+
+@media(min-width:975px){
+    .container{
+        background-image: url(./base-apparel-coming-soon-master/images/bg-pattern-desktop.svg);
+       background-size: cover;
+       background-repeat: no-repeat;
+    }
+}
+
+@media(max-width:975px){
+    .inner-container{
+        padding: 4rem ;
+    }  
+}
+@media(min-width:724px){
+    .container{
+        background-image: url(./base-apparel-coming-soon-master/images/bg-pattern-desktop.svg);
+       background-size: cover;
+       background-repeat: no-repeat;
+    } 
+}
+
+@media(max-width:724px){
+    main{
+        display: unset;
+        
+    /* grid-template-columns: auto; */
+    }
+    .image-texts .img{
+        display: block;
+    }
+    .image{
+        display: none;
+    }
+    .input-container{
+        width: unset;
+    }
+    .circle{
+        padding-inline: 2rem;
+        padding-top: 3rem;
+        width: 376px;
+    }
+    .image-texts{
+        margin-block: 2rem;
+    }
+    .inner-container{
+        padding:0;
+    }
+    .texts{
+        padding-inline: 2rem;
+        text-align: center;
+        width: 376px;
+    }
+    .arrow-icon{
+        margin: 0;
+        transform: translate(3px, 9px);
+        inset: auto;
+    }
+}
