@@ -5,6 +5,11 @@ const input_container=document.querySelector('.input-container');
 
 let emailPattern=/^[A-Za-z._]{4,}[0-9]{1,3}@[a-z]{5,15}[.com]{4}$/ ;
 
+input.addEventListener('focus',()=>{
+    input_container.classList.remove('errors');
+})
+
+
 button.addEventListener('click',()=>{
     let inputValue=input.value;
     // console.log(inputValue);

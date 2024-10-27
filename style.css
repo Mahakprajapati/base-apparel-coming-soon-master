@@ -93,7 +93,7 @@ input{
     display: none;
 }
 .error-icon{
-    right: 85px;
+    right: 42px;
     position: absolute;
     top: 8px;
     display: none;
@@ -169,6 +169,9 @@ input{
         right: -14px;
     }
     input{
-        padding-right: 4.5rem;
+        padding-right: 6rem;
+    }
+    .error-icon{
+        right: 68px;
     }
 }
