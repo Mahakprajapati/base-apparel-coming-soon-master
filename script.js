@@ -3,7 +3,7 @@ const input=document.querySelector('input');
 const input_container=document.querySelector('.input-container');
 // console.log(input);
 
-let emailPattern=/^[A-Za-z._]{4,}[0-9]{0,3}@[gmail.com]{9}$/ ;
+let emailPattern=/^[A-Za-z._]{4,}[0-9]{1,3}@[a-z]{5,15}[.com]{4}$/ ;
 
 button.addEventListener('click',()=>{
     let inputValue=input.value;
